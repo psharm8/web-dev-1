@@ -10,13 +10,14 @@ function sumOfSquares(num1, num2, num3) {
     }
     return num1 * num1 + num2 * num2 + num3 * num3;
 }
+
 function sayHelloTo(firstName, lastName, title) {
-    if (firstName == undefined) {
+    if (firstName == undefined || firstName.length==0) {
         throw "firstName is required.";
     }
-    if (lastName == undefined) {
+    if (lastName == undefined || lastName.length == 0) {
         console.log("Hello, " + firstName + "!");
-    } else if (title == undefined) {
+    } else if (title == undefined || title.length == 0) {
         console.log("Hello, " + firstName + " " + lastName + ". I hope you are having a good day!");
     } else {
         console.log("Hello, " + title + " " + firstName + " " + lastName + "! Have a good evening!");
@@ -76,7 +77,7 @@ function getRandomInt(min, max) {
 }
 
 function randomizeSentences(paragraph) {
-    if (paragraph == undefined) {
+    if (paragraph == undefined || paragraph.length == 0) {
         throw "paragraph should be a non-empty string."
     }
     let splits = paragraph.replace(/([\.!\?])\s+/g, (sub) => {
