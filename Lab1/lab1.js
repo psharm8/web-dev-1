@@ -26,7 +26,7 @@ function sayHelloTo(firstName, lastName, title) {
 
 function cupsOfCoffee(numberOfCups) {
     if (isNaN(numberOfCups) || numberOfCups < 1 || parseInt(numberOfCups) != numberOfCups) {
-        throw "Number of cups should be an integer greater than one."
+        throw "Number of cups should be an integer greater than one.";
     }
     let getGrammer = (x) => {
         if (x > 1) {
