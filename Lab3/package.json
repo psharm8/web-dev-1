@@ -1,0 +1,11 @@
+{
+  "name": "metrics",
+  "version": "1.0.0",
+  "description": "Module to return metrics of the specified text",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Puneet Sharma",
+  "license": "MIT"
+}
