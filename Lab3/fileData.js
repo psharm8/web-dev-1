@@ -8,7 +8,7 @@ const fs = require('fs');
 module.exports = {
     getFileAsString: (path) => {
         return new Promise((fulfill, reject) => {
-            if (!path) throw "No file name provided.";
+            if (!module.exports.isPathValid(path)) throw "Please provide a valid file path.";
             fs.readFile(path, "utf-8", (err, data) => {
                 if (err) {
                     reject(err);
@@ -33,7 +33,7 @@ module.exports = {
     },
     saveStringToFile: (path, text) => {
         return new Promise((fulfill, reject) => {
-            if (!path) throw "No file name provided.";
+            if (!module.exports.isPathValid(path)) throw "Please provide a valid file path.";
             fs.writeFile(path, text, (err, data) => {
                 if (err) {
                     reject(err);
@@ -52,5 +52,8 @@ module.exports = {
             let saveResult = module.exports.saveStringToFile(path, data);
             saveResult.then(fulfill, reject);
         });
+    },
+    isPathValid: (filePath) => {
+        return filePath && typeof filePath === "string" && filePath.length > 0;
     }
 };
