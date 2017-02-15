@@ -50,17 +50,3 @@ files.forEach((file) => {
     });
     console.log();
 });
-
-// checkAndProcess(files[0]).then((data) => {
-//     console.log(JSON.stringify(data, null, 4));
-// }).catch((err) => {
-//     console.error("Error processing input file.");
-//     console.error(err);
-// }).then(() => {
-//     checkAndProcess(files[1]).then((data) => {
-//         console.log(JSON.stringify(data, null, 4));
-//     }).catch((err) => {
-//         console.error("Error processing input file.");
-//         console.error(err);
-//     });
-// });

@@ -40,3 +40,6 @@ jspm_packages
 .idea/
 
 .vscode/launch.json
+*.suo
+.vscode
+.vs
