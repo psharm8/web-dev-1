@@ -17,12 +17,13 @@ let url = settings.mongoConfig.serverUrl + settings.mongoConfig.database;
 let connection = undefined;
 
 let connectDb = () => {
-    if (connection) {
+    if (!connection) {
         connection = mongoClient.connect(url)
             .then((db) => {
                 return db;
             });
     }
+    return connection;
 };
 
 module.exports = connectDb;

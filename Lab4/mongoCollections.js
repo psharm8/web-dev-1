@@ -11,10 +11,12 @@ let getCollection = (collection) => {
 
     return () => {
         if (!col) {
-            col = connection().then(db => {
-                return db.collection(collection);
-            });
+            col = connection()
+                .then(db => {
+                    return db.collection(collection);
+                });
         }
+        return col;
     };
 };
 
