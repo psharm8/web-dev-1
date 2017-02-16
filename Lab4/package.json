@@ -1,0 +1,14 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "to-do list module",
+  "main": "app.js",
+  "author": {
+    "name": "Puneet Sharma"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^2.2.22",
+    "uuid": "^3.0.1"
+  }
+}
