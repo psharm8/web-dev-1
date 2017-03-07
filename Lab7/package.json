@@ -1,0 +1,19 @@
+{
+  "name": "lab7",
+  "version": "0.0.0",
+  "description": "Lab7",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Puneet Sharma"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "mongodb": "^2.2.24",
+    "node-uuid": "^1.4.7"
+  }
+}
