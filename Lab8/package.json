@@ -1,0 +1,19 @@
+{
+  "name": "lab8",
+  "version": "0.0.0",
+  "description": "Lab8",
+  "main": "server.js",
+  "author": {
+    "name": "Puneet Sharma"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
+}

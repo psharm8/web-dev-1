@@ -13,6 +13,22 @@ router.get("/recipe/:id",
             });
     });
 
+router.put("/:rid/:cid",
+    (req, res) => {
+        let updatedData = req.body;
+        commentsData.getCommentById(req.params.cid).then(() => {
+            commentsData.updateComment(req.params.rid, req.params.cid, updatedData)
+                .then(updated => {
+                    res.json(updated);
+                },
+                e => {
+                    res.status(500).json({ error: e });
+                });
+        }).catch(e => {
+            res.status(404).json({ error: e });
+        });
+    });
+
 router.get("/:id",
     (req, res) => {
         commentsData.getCommentById(req.params.id).then(comment => {
@@ -21,22 +37,6 @@ router.get("/:id",
             (e) => {
                 res.status(404).json({ error: e });
             });
-    });
-
-router.put("/:rid/:cid",
-    (req, res) => {
-        let updatedData = req.body;
-        commentsData.getCommentById(req.params.cid).then(() => {
-            commentsData.updateComment(req.params.rid, req.params.cid, updatedData)
-                .then(updated => {
-                        res.json(updated);
-                    },
-                    e => {
-                        res.status(500).json({ error: e });
-                    });
-        }).catch(e => {
-            res.status(404).json({ error: e });
-        });
     });
 
 router.delete("/:id",

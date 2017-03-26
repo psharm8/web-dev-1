@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <form class="server-form" method="post">
+            <div class="form-group">
+                <label for="inputText">Text</label>
+                <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Input Text" value="{{text}}">
+            </div>
+            {{#if error }}
+            <div class="form-group">
+                <div class="alert alert-danger">
+                    {{ error }}
+                </div>
+            </div>
+            {{/if}}
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+            {{#if result }}
+            <div class="form-group">
+                {{#if result.isPalindrome}}
+                <div class="alert is-palindrome">
+                {{else}}
+                <div class="alert not-palindrome">
+                {{/if}}
+                    Text is {{ result.message }}
+                </div>
+            </div>
+            {{/if}}
+        </form>
+    </div>
+</div>
