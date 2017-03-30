@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>508fcde4-43e7-465b-b560-d7e391b00d6c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -33,7 +33,7 @@
     <Compile Include="data\palindromes.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\palindromes.js" />
-    <Compile Include="server.js" />
+    <Compile Include="app.js" />
     <Content Include="package.json" />
     <Content Include="public\css\main.css" />
     <Content Include="README.md" />
