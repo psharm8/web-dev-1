@@ -12,7 +12,7 @@
         }
         return {
             isPalindrome: result,
-            message: result ? "is a palindrome." : "is not a palindrome."
+            text: text
         };
     }
 };
