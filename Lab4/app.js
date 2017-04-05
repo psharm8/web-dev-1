@@ -29,7 +29,7 @@ function completeMany(ids) {
 
 let task = todoItems.createTask("Ponder Dinosaurs", "Has Anyone Really Been Far Even as Decided to Use Even Go Want to do Look More Like?");
 
-let firstTask = undefined;
+let firstTask;
 
 task.then((t) => {
         console.log("Task created:");

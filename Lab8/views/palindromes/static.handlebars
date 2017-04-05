@@ -1,0 +1,22 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <form id="static-form" method="post">
+            <div class="form-group">
+                <label for="inputText">Text</label>
+                <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Input Text" value="{{text}}">
+            </div>
+            <div class="form-group hidden" id="error-container">
+                <div class="alert alert-danger text-goes-here">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+            <div class="form-group hidden" id="items-container">
+                <div class="form-group">Item(s) checked</div>
+                <ul class="form-group" id="items-list">
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
