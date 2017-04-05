@@ -1,11 +1,11 @@
 ﻿const palindromeRoutes = require("./palindromes");
 
 const constructorMethod = (app) => {
-    app.use("/palindromes", palindromeRoutes);
+    app.use("/", palindromeRoutes);
 
     app.use("*",
         (req, res) => {
-            res.redirect("/palindromes");
+            res.redirect("/");
         });
 };
 

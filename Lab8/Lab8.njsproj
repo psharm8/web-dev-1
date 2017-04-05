@@ -31,6 +31,7 @@
   <ItemGroup>
     <Compile Include="data\index.js" />
     <Compile Include="data\palindromes.js" />
+    <Compile Include="public\js\form.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\palindromes.js" />
     <Compile Include="app.js" />
@@ -38,12 +39,14 @@
     <Content Include="public\css\main.css" />
     <Content Include="README.md" />
     <Content Include="views\layouts\main.handlebars" />
-    <Content Include="views\palindromes\form.handlebars" />
+    <Content Include="views\palindromes\server.handlebars" />
+    <Content Include="views\palindromes\static.handlebars" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
+    <Folder Include="public\js\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
     <Folder Include="views\layouts\" />
