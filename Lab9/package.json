@@ -1,0 +1,28 @@
+{
+    "name": "lab9",
+    "version": "0.0.0",
+    "description": "Lab9",
+    "main": "app.js",
+    "author": {
+        "name": "Puneet Sharma"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "cookie-parser": "~1.4.3",
+        "express": "^4.15.2",
+        "express-session": "^1.11.3",
+        "express-handlebars": "^3.0.0",
+        "morgan": "~1.7.0",
+        "serve-favicon": "~2.3.2",
+        "passport": "^0.2.2",
+        "passport-local": "^1.0.0",
+        "handlebars": "latest",
+        "connect-flash": "^0.1.1",
+        "bcrypt-nodejs": "0.0.3"
+    }
+}
